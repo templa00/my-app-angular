@@ -1,6 +1,6 @@
 .text-box {
-    margin: 50px 50px 50px 50px;
-    padding: 10px 10px 10px 10px;
+    margin: 50px 50px;
+    padding: 10px 10px;
     color: #5d627b;
     background: white;
     border-top: solid 5px rgb(181, 228, 255);
@@ -12,3 +12,60 @@
     padding: 0;
     text-align: center;
 }
+
+.balloon {
+    position: relative;
+    display: inline-block;
+    margin: 0px 30px;
+    padding: 0 5px;
+    width: 90px;
+    height: 90px;
+    line-height: 90px;
+    text-align: center;
+    color: #FFF;
+    font-size: 20px;
+    font-weight: bold;
+    background: rgb(181, 228, 255);
+    border-radius: 50%;
+    box-sizing: border-box;
+  }
+  
+  .balloon:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: -25px;
+    margin-top: -15px;
+    border: 15px solid transparent;
+    border-left: 15px solid rgb(181, 228, 255);
+    z-index: 0;
+  }
+
+  .btn-social-long-twitter {
+    color: #FFF;/*文字・アイコン色*/
+    border-radius: 7px;/*角丸に*/
+    display: inline-block;
+    height: 50px;/*高さ*/
+    width: 190px;/*幅*/
+    text-align: center;/*中身を中央寄せ*/
+    font-size: 25px;/*文字のサイズ*/
+    line-height: 50px;/*高さと合わせる*/
+    background: #1da1f3;
+    overflow: hidden;/*はみ出た部分を隠す*/
+    text-decoration:none;/*下線は消す*/
+  }
+  
+  .btn-social-long-twitter .fa-twitter {
+    text-shadow: 2px 2px 0px #4287d6;
+    font-size: 30px;
+  }
+  
+  .btn-social-long-twitter span {
+    display:inline-block;
+    transition: .5s;
+  }
+  
+  .btn-social-long-twitter:hover span {
+    -webkit-transform: rotateX(360deg);
+    transform: rotateX(360deg);
+  }

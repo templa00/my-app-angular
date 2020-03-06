@@ -1,0 +1,14 @@
+.text-box {
+    margin: 30px 60px;
+    padding: 10px 10px;
+    color: #5d627b;
+    background: white;
+    border-top: solid 5px rgb(181, 228, 255);
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.22);
+}
+
+.text-box p {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}

@@ -1,0 +1,44 @@
+.list {
+    overflow: hidden;
+    margin: 0;  /* 余分なマージンを消去 */
+    padding: 20px 0px; /* 余分なパディングを消去 */
+    text-align: center; /* 中央寄せ */
+}
+.list li {
+    display: inline-block; /* 横並びに */
+    letter-spacing: normal;
+    vertical-align: top;
+    margin: 10px 10px;
+    box-shadow: 0 3px 4px rgba(0, 0, 0, 0.32);/*影*/
+    transition: .3s;/*移動時間*/
+}
+
+.list li:hover {
+    -webkit-transform: translateY(-5px);
+    transform: translateY(-5px);
+  }
+
+/* リンク下線消す */
+a {
+    text-decoration: none;
+}
+/* リンク色変更しない */
+a.no-color-change {
+    color: #5d627b;
+  }
+
+/* テキストボックス */
+.box {
+    color: #5d627b;/*文字色*/
+    background: rgb(255, 255, 255);/*背景色*/
+    border-top: solid 6px rgb(181, 228, 255);/*ボーダー色*/
+    padding: 15px;
+    width: 256px;
+    height: 80px;
+    text-align: center;
+    vertical-align: middle;
+}
+.box p {
+    margin: 0; 
+    padding: 0;
+}

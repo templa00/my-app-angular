@@ -92,3 +92,56 @@
       /* 1.5倍 */
       font-size: 1.5em
   }
+
+  /* スキルリスト */
+  ul {
+    border: solid 2px rgb(181, 228, 255);
+    padding: 0.5em;
+    position: relative;
+    margin-top: 2em;
+    margin: 10px 30px;
+  }
+  ul li {
+    line-height: 1.5;
+    padding: 0.5em 0 0.5em 1.4em;
+    border-bottom: dashed 1px silver;
+    list-style-type: none!important;
+  }
+  ul li:last-of-type {
+    border-bottom: none;
+  }
+  ul li:before {
+    /*リスト内のアイコン*/
+    font-family: "Font Awesome 5 Free";
+    content: "\f138";/*アイコン種類*/
+    position: absolute;
+    left : 0.5em; /*左端からのアイコンまで*/
+    color: rgb(181, 228, 255); /*アイコン色*/
+  }
+
+/* 評価（星） */
+ .rating{
+    position: absolute;
+    display:inline-block;
+    font-size: 15px;
+    left: 200px;
+  }
+
+  .star-rating {
+    position: absolute;
+    display:inline-block;
+    font-size: 15px;
+    left: 220px;
+  }
+  .star-rating .star-rating-item{
+    position:absolute;
+    overflow: hidden;
+  }
+  .star-rating .star-rating-item:before{
+    content:"★★★★★";
+    color: #ffcc33;
+  }
+  .star-rating:after {
+    content:"★★★★★";
+    color: #ccc;
+  }

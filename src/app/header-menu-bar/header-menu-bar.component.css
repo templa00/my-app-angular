@@ -23,13 +23,14 @@ ul li {
     padding: 10px 10px 10px 10px;
 }
 
-.menu-btn {
+ .menu-btn {
     color: #fff;
     text-transform: uppercase;
     text-align: center;
     position: relative;
     text-decoration: none;
     display: inline-block;
+    cursor : pointer;
 }
 
 .menu-btn::before {

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { SKILLS } from './Skill';
+import { SKILLS } from './skill';
 
 @Component({
   selector: 'app-profile',

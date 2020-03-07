@@ -25,11 +25,13 @@
 </div>
 
 <!-- skillsをループして表示 -->
-<ul class="skill">
-  <li *ngFor="let skill of skills">
-    {{skill.name}}
-    <div class="star-rating">
-        <div class="star-rating-item" [ngStyle]="{ 'width': skill.rate }"></div>
-    </div>
-  </li>
-</ul>
+<div class="skill">
+    <ul>
+        <li *ngFor="let skill of skills">
+            {{skill.name}}
+            <div class="star-rating">
+                <div class="star-rating-item" [ngStyle]="{ 'width': skill.rate }"></div>
+            </div>
+        </li>
+    </ul>
+</div>

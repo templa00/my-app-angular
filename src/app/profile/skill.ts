@@ -5,7 +5,7 @@ interface Skill {
 
 export const SKILLS: Skill[] = [
   { name: 'C#' , rate:'80%'},
-  { name: 'PHP' , rate:'50%'},
+  { name: 'PHP' , rate:'60%'},
   { name: 'HTML' , rate:'60%'},
   { name: 'CSS' , rate:'60%'},
   { name: 'JavaScripot' , rate:'60%'},

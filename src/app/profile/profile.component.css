@@ -92,14 +92,19 @@
       /* 1.5倍 */
       font-size: 1.5em
   }
-
   /* スキルリスト */
+  .skill {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
   ul {
     border: solid 2px rgb(181, 228, 255);
     padding: 0.5em;
     position: relative;
     margin-top: 2em;
-    margin: 10px 30px;
+    width: 500px;
+    max-width: 80%;/* スマホの場合、スマホ画面の80%が500px未満になるのでこっちが対応される */
   }
   ul li {
     line-height: 1.5;
@@ -124,14 +129,15 @@
     position: absolute;
     display:inline-block;
     font-size: 15px;
-    left: 200px;
+    left: 50px;
   }
 
   .star-rating {
     position: absolute;
     display:inline-block;
     font-size: 15px;
-    left: 220px;
+    /* left: 220px; */
+    right: 50px;
   }
   .star-rating .star-rating-item{
     position:absolute;

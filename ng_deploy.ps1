@@ -1,2 +1,2 @@
-cd D:\xampp\htdocs\project\my-app-angular
+cd D:\project\WebApp\my-app-angular
 ng deploy

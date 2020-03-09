@@ -124,8 +124,20 @@
               "devServerTarget": "my-app-angular:serve:production"
             }
           }
+        },
+        "deploy": {
+          "builder": "@netlify-builder/deploy:deploy",
+          "options": {
+            "outputPath": "dist/my-app-angular",
+            "netlifyToken": "",
+            "siteId": ""
+          }
         }
       }
-    }},
-  "defaultProject": "my-app-angular"
+    }
+  },
+  "defaultProject": "my-app-angular",
+  "cli": {
+    "analytics": "dcaffd39-ca77-4c03-8ffa-e5ca5b3da682"
+  }
 }

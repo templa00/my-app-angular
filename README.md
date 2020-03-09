@@ -1,27 +1,50 @@
 # MyAppAngular
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.20.
+このプロジェクトは、[Angular CLI]（https://github.com/angular/angular-cli）バージョン8.3.20で生成されました。
 
-## Development server
+## 開発サーバー
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+devサーバーに対して `ng serve`を実行します。 `http：// localhost：4200 /`に移動します。ソースファイルを変更すると、アプリは自動的にリロードされます。
 
-## Code scaffolding
+## コードの足場
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+`ng generate component component-name`を実行して、新しいコンポーネントを生成します。 `ng generate directive | pipe | service | class | guard | interface | enum | module`を使用することもできます。
 
-## Build
+## ビルド
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+`ng build`を実行してプロジェクトをビルドします。ビルドアーティファクトは `dist /`ディレクトリに保存されます。実動ビルドには `--prod`フラグを使用します。
 
-## Running unit tests
+## 単体テストの実行
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+[ng test]を実行して、[Karma]（https://karma-runner.github.io）を介してユニットテストを実行します。
 
-## Running end-to-end tests
+## エンドツーエンドテストの実行
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+[ng e2e]を実行して、[Protractor]（http://www.protractortest.org/）を介してエンドツーエンドのテストを実行します。
 
-## Further help
+## さらにヘルプ
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+Angular CLIの詳細なヘルプを取得するには、「ng help」を使用するか、[Angular CLI README]（https://github.com/angular/angular-cli/blob/master/README.md）をご覧ください。
+
+## 概要
+Angularで作成した、ポートフォリオサイト
+
+## 実行手順
+1. fortawesomeをパッケージに追加しているので、実行する場合は、
+<pre>npm i -D @fortawesome/fontawesome-free</pre>
+でfortawesomeをインストールしてください。
+
+2. Angular の CLI (Command Line Interface) をインストール
+<pre>$ npm install -g @angular/cli</pre>
+
+3. ローカルサーバーを起動してwebブラウザで表示する。
+<pre>$ ng serve --open</pre>
+
+## netlifyにデプロイ手順
+1. SiteIDの設定、Tokensの設定（netlifyに書いてある）
+Tokens：https://app.netlify.com/user/applications
+<pre>ng add @netlify-builder/deploy</pre>
+
+1. デプロイする
+※ (GitHub連携している場合Pushした際にデプロイされるが、現状なぜかnot Pageなるのでプッシュ後はデプロイコマンドを打つ)
+<pre>$ ng deploy</pre>
